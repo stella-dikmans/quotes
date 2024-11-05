@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real-Time Q&A</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Real-Time Q&A</h1>
+
+  <div id="questionForm">
+    <h2>Ask a Question</h2>
+    <textarea id="questionText" placeholder="Enter your question..."></textarea>
+    <button onclick="submitQuestion()">Submit</button>
+  </div>
+
+  <div id="questionsContainer">
+    <h2>Questions and Answers</h2>
+    <ul id="questionsList"></ul>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
