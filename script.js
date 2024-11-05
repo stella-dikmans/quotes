@@ -2,14 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  databaseURL: "YOUR_DATABASE_URL",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET_SENDER",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
+  apiKey: "process.env.YOUR_API_KEY",
+  authDomain: "process.env.YOUR_AUTH_DOMAIN",
+  databaseURL: "process.env.YOUR_DATABASE_URL",
+  projectId: "process.env.YOUR_PROJECT_ID",
+  storageBucket: "process.env.YOUR_STORAGE_BUCKET_SENDER",
+  messagingSenderId: "process.env.YOUR_MESSAGING_SENDER_ID",
+  appId: "process.env.YOUR_APP_ID",
+  measurementId: "process.env.YOUR_MEASUREMENT_ID"
 };
 
 // Initialize Firebase
